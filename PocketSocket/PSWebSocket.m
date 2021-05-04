@@ -223,7 +223,7 @@
 - (void)open {
     [self executeWork:^{
         if(_opened || _readyState != PSWebSocketReadyStateConnecting) {
-            [NSException raise:@"Invalid State" format:@"You cannot open a PSWebSocket more than once."];
+            // [NSException raise:@"Invalid State" format:@"You cannot open a PSWebSocket more than once."];
             return;
         }
         
